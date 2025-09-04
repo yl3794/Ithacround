@@ -32,6 +32,8 @@ Using personalization algorithms, the app learns your preferences and recommends
 
 ---
 
+
+
 ## 📍 Local Focus
 
 Curated locations include:
@@ -40,4 +42,9 @@ Curated locations include:
 - **Collegetown** — Student favorites and nightlife  
 - **Downtown Ithaca** — The Commons and upscale dining  
 - **Hidden Gems** — Local favorites and authentic ethnic cuisine  
-- **Outdoor** — Ithaca's famous gorges and natural attractions  
+- **Outdoor** — Ithaca's famous gorges and natural attractions
+<img width="315" height="669" alt="Screenshot 2025-09-03 at 11 07 33 PM" src="https://github.com/user-attachments/assets/426604bd-3386-4d53-8382-c21174361dbd" />
+
+
+
+
