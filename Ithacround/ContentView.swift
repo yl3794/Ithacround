@@ -643,7 +643,7 @@ struct MapView: View {
     
     var body: some View {
             NavigationView {
-                sMap(coordinateRegion: $region, annotationItems: locationService.locations) { location in
+                Map(coordinateRegion: $region, annotationItems: locationService.locations) { location in
                     MapMarker(coordinate: location.coordinate, tint: .red)
                 }
                 .navigationTitle("Map")
