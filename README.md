@@ -43,7 +43,17 @@ Curated locations include:
 - **Downtown Ithaca** — The Commons and upscale dining  
 - **Hidden Gems** — Local favorites and authentic ethnic cuisine  
 - **Outdoor** — Ithaca's famous gorges and natural attractions
-<img width="315" height="669" alt="Screenshot 2025-09-03 at 11 07 33 PM" src="https://github.com/user-attachments/assets/426604bd-3386-4d53-8382-c21174361dbd" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-03 at 23 09 46" src="https://github.com/user-attachments/assets/8021d174-bf46-40d5-9ed0-516d3e7db7f6" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-03 at 23 09 55" src="https://github.com/user-attachments/assets/7cdbce74-76f0-4e92-bd93-14e7b69efeb8" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-03 at 23 10 01" src="https://github.com/user-attachments/assets/97d97060-1e03-48b9-95e1-3b844ef0dbf6" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-03 at 23 10 15" src="https://github.com/user-attachments/assets/20db8779-eb3a-4ffb-b95a-3802769bd133" />
+
+<img width="1206" height="2622" alt="Simulator Screenshot - iPhone 16 Pro - 2025-09-03 at 23 10 21" src="https://github.com/user-attachments/assets/c09e80d8-7d42-4ce4-b9ac-c146e6146c3d" />
+
 
 
 
