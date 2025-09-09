@@ -685,8 +685,8 @@ struct FavoritesView: View {
                 }
                 .listStyle(PlainListStyle())
             }
+            .navigationTitle("Favorites")
         }
-        .navigationTitle("Favorites")
     }
 }
 
