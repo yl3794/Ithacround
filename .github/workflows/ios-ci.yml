@@ -14,6 +14,63 @@ jobs:
       - name: Check out code
         uses: actions/checkout@v4
 
+      - name: Select Xcode
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: latest-stable
+
+      - name: Cache SPM
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/Library/Developer/Xcode/DerivedData/**/SourcePackages
+            ~/.swiftpm
+          key: ${{ runner.os }}-spm-${{ steps.xcode.outputs.version }}-${{ hashFiles('**/Package.resolved') }}
+          restore-keys: |
+            ${{ runner.os }}-spm-
+
+      - name: SwiftLint
+        uses: norio-nomura/action-swiftlint@3.2.1
+        continue-on-error: true
+
+      - name: Show Xcode & Simulator list
+        run: |
+          xcodebuild -version
+          xcrun simctl list devices
+
+      - name: Build & Test (iPhone 15, latest iOS)
+        run: |
+          set -eo pipefail
+          mkdir -p build_logs
+          xcodebuild \
+            -project Ithacround.xcodeproj \
+            -scheme "Ithacround" \
+            -destination 'platform=iOS Simulator,OS=latest,name=iPhone 15' \
+            -resultBundlePath build_logs/TestResults.xcresult \
+            clean test
+
+      - name: Upload Test Results (.xcresult)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: xcresult
+          path: build_logs/TestResults.xcresult
+name: iOS CI (Build & Test)
+
+on:
+  push:
+    branches: [ "**" ]
+  pull_request:
+    branches: [ "**" ]
+
+jobs:
+  build-and-test:
+    runs-on: macos-15
+
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
       # Pin Xcode (keeps things stable as runner images evolve)
       - name: Select Xcode
         uses: maxim-lobanov/setup-xcode@v1
